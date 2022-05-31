@@ -18,6 +18,6 @@ app.get("/comparator",function(req,res){
     res.sendFile(__dirname+"/comparator.html");
 })
 
-app.listen(5500,function(req,res){
+app.listen(process.env.PORT || 5500,function(req,res){
     console.log("Server is running on port 3000");
 })
